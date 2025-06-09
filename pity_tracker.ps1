@@ -88,6 +88,7 @@ function Upload-Result {
     }
 }
 
+# --- main script ---
 $uid = Read-Host 'Enter your UID'
 $token = Decode-Token $githubTokenEncoded
 if (-not $token) { exit }
